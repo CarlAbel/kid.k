@@ -1,0 +1,265 @@
+html {
+    font-family: 'Courier New', Courier, monospace Arial, Helvetica, sans-serif;
+    color: rgb(173, 173, 173);
+}
+body {
+    margin: 0;
+    background-color: rgb(27, 26, 29);
+}
+
+
+
+/*Text & Font*/
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 18.5px;
+    line-height: 1.666;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+
+
+/*Layout*/
+header {
+    background-image: url();
+    height: 140px;
+    background-color: blanchedalmond;
+}
+header nav {
+    max-width: 1184px;
+    height: 20%;
+    margin: 0 auto;
+    color: rgb(105, 105, 105);
+    background-color: rgb(27, 26, 29);
+}
+main {
+    display: flex;
+    max-width: 1184px;
+    padding: 48px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;   
+}
+
+
+/* Forside */
+div img {
+    max-width: 100%;
+    height: 95%;
+}
+section h1{
+    margin-left: 20px;
+}
+main section{
+    width: 60%;
+    display: inline-block;
+    text-align: justify;
+}
+main section h1{
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+
+
+/* Kalender på forside*/
+main .kalender{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    size: 10%;
+}
+main .kalender h4{
+    padding-left: 30px;
+}
+
+
+
+/* Navigering layout */
+nav ul{
+    padding: 5px;
+    list-style: none;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+ul li{
+    padding-top: 20px;
+    padding-right: 20px; 
+    font-weight: bold;
+    
+}
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(105, 105, 105);
+    
+}
+nav a h1{
+    display: block;
+    padding-top: 20px;
+    font-size: 40px;
+    background-color: blanchedalmond;
+}
+nav h1{
+    color: rgb(105, 105, 105);
+}
+
+
+
+/* Hover effekter */
+ul li:hover{
+    border: none;
+  background: #d4d4d4;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+}
+a :hover{
+    border: none;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+}
+
+
+
+/* Hygiejne */
+div .right-picture{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 500px;
+}
+
+
+
+/* Praktisk info */  
+.info{
+    float: left;
+    width: 33.33%;
+}
+.praktisk:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div .praktisk{
+    width: 170%
+}
+
+
+
+/* footer */
+footer {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 30px;
+    color: rgb(105, 105, 105);
+    background-color: blanchedalmond;
+    margin-right: 0px;
+}
+footer section{
+    padding-right: 10%;
+    padding-left: 40px;
+}
+footer a{
+    display: block;
+    line-height: 2.0;
+    color: rgb(105, 105, 105);
+}
+.footernav{
+    display: block;
+    flex-direction: row;
+}
+
+
+
+/* Galleri - test */
+div .skabeloner{   
+    display: block;
+    text-align: end;
+    padding-left: 15%;
+}
+.page{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.grid a{
+    max-height: 500px;
+    overflow: hidden;
+}
+.grid p{
+    display: flex;
+    align-items: flex-start;
+}
+.modal-outer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.75);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-inner{
+    position: relative;
+    transform: scale(0.3);
+    transition: transform 0.4s;
+}
+.open .modal-inner{
+    transform: scale(0.85);
+}
+.close-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+/* Popup på Skabeloner */
+.modal-content{
+    background: blanchedalmond;
+    padding: 15px;
+    max-width: 580px;
+    color: black;
+}
+.hidden{
+    display: none;
+}
